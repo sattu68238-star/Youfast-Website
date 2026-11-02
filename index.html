@@ -392,3 +392,345 @@ function checkMedia() {
 
 </body>
       </html>
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>YOUFAST - Smart Media Tools</title>  <meta name="description" content="YOUFAST provides simple and convenient video and audio tools.">  <style>  
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+}  
+  
+body {  
+    font-family: Arial, sans-serif;  
+    background: #f4f7fc;  
+    color: #172554;  
+}  
+  
+/* HEADER */  
+  
+header {  
+    background: #10234b;  
+    color: white;  
+    padding: 20px;  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+}  
+  
+.logo {  
+    font-size: 27px;  
+    font-weight: bold;  
+    letter-spacing: 2px;  
+}  
+  
+nav a {  
+    color: white;  
+    text-decoration: none;  
+    margin-left: 15px;  
+    font-size: 14px;  
+}  
+  
+/* HERO */  
+  
+.hero {  
+    text-align: center;  
+    padding: 70px 15px;  
+    background: linear-gradient(135deg, #10234b, #2563eb);  
+    color: white;  
+}  
+  
+.hero h1 {  
+    font-size: 38px;  
+    margin-bottom: 15px;  
+}  
+  
+.hero p {  
+    font-size: 17px;  
+    line-height: 1.7;  
+}  
+  
+/* MAIN CARD */  
+  
+.card {  
+    max-width: 620px;  
+    margin: 30px auto;  
+    padding: 30px 20px;  
+    background: white;  
+    border-radius: 16px;  
+    box-shadow: 0 5px 25px #0001;  
+    text-align: center;  
+}  
+  
+.card h2 {  
+    margin-bottom: 12px;  
+}  
+  
+input {  
+    width: 100%;  
+    padding: 16px;  
+    border: 1px solid #ccd5e5;  
+    border-radius: 9px;  
+    font-size: 15px;  
+    margin: 20px 0;  
+}  
+  
+button {  
+    background: #2563eb;  
+    color: white;  
+    border: none;  
+    padding: 15px 30px;  
+    border-radius: 9px;  
+    font-size: 16px;  
+    cursor: pointer;  
+}  
+  
+button:hover {  
+    background: #1d4ed8;  
+}  
+  
+#message {  
+    margin-top: 18px;  
+    font-size: 14px;  
+    line-height: 1.6;  
+    overflow-wrap: anywhere;  
+}  
+  
+#message a {  
+    color: #2563eb;  
+    font-weight: bold;  
+}  
+  
+/* FEATURES */  
+  
+.features {  
+    padding: 30px 20px;  
+    text-align: center;  
+}  
+  
+.features h2 {  
+    margin-bottom: 25px;  
+    font-size: 27px;  
+}  
+  
+.grid {  
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr);  
+    gap: 18px;  
+    max-width: 650px;  
+    margin: auto;  
+}  
+  
+.feature {  
+    background: white;  
+    padding: 28px 12px;  
+    border-radius: 13px;  
+    box-shadow: 0 3px 15px #0001;  
+}  
+  
+.feature h3 {  
+    margin-bottom: 12px;  
+    color: #1d4ed8;  
+}  
+  
+/* ABOUT */  
+  
+.about {  
+    text-align: center;  
+    padding: 40px 20px;  
+    line-height: 1.8;  
+}  
+  
+/* FOOTER */  
+  
+footer {  
+    background: #10234b;  
+    color: white;  
+    text-align: center;  
+    padding: 30px 15px;  
+    line-height: 2;  
+}  
+  
+footer a {  
+    color: white;  
+    text-decoration: none;  
+}  
+  
+/* MOBILE */  
+  
+@media(max-width: 480px) {  
+  
+    .hero h1 {  
+        font-size: 29px;  
+    }  
+  
+    .logo {  
+        font-size: 23px;  
+    }  
+  
+    nav a {  
+        margin-left: 7px;  
+        font-size: 12px;  
+    }  
+  
+    .grid {  
+        grid-template-columns: 1fr 1fr;  
+    }  
+}  
+  
+</style>  </head>  <body>  <!-- HEADER -->  <header>  <div class="logo">YOUFAST</div>  
+
+<nav>  
+    <a href="#">Home</a>  
+    <a href="#tools">Tools</a>  
+    <a href="#about">About</a>  
+</nav>
+
+</header>  <!-- HERO SECTION -->  <section class="hero">  <h1>Your Media, Your Way.</h1>  
+
+<p>  
+    Simple and Smart Video & Audio Tools.  
+    <br>  
+    Fast, Easy and Mobile Friendly.  
+</p>
+
+</section>  <!-- MEDIA TOOL -->  <section class="card" id="tools">  <h2>Media Tools</h2>  
+
+<p>Enter a direct media file URL</p>  
+
+<input  
+    type="url"  
+    id="mediaUrl"  
+    placeholder="Paste your media file URL here..."  
+>  
+
+<button onclick="checkMedia()">  
+    Continue  
+</button>  
+
+<div id="message">  
+    Supports authorized direct media file links.  
+</div>
+
+</section>  <!-- FEATURES -->  <section class="features">  <h2>Our Features</h2>  
+
+<div class="grid">  
+
+    <div class="feature">  
+        <h3>🎬 Video Tools</h3>  
+        <p>Work with video files.</p>  
+    </div>  
+
+    <div class="feature">  
+        <h3>🎵 Audio Tools</h3>  
+        <p>Work with audio files.</p>  
+    </div>  
+
+    <div class="feature">  
+        <h3>⚡ Fast Tools</h3>  
+        <p>Simple user experience.</p>  
+    </div>  
+
+    <div class="feature">  
+        <h3>📱 Mobile Friendly</h3>  
+        <p>Works on mobile screens.</p>  
+    </div>  
+
+</div>
+
+</section>  <!-- ABOUT -->  <section class="about" id="about">  <h2>About YOUFAST</h2>  
+
+<p>  
+    YOUFAST is a modern media tools platform  
+    designed to make working with authorized  
+    video and audio files simple and convenient.  
+</p>
+
+</section>  <!-- FOOTER -->  <footer>  <h2>YOUFAST</h2>  
+
+<p>Smart Media Tools</p>  
+
+<p>  
+    <a href="#about">About Us</a> |  
+    <a href="mailto:contact@example.com">Contact</a> |  
+    <a href="#privacy">Privacy</a>  
+</p>  
+
+<p>© 2026 YOUFAST. All Rights Reserved.</p>
+
+</footer>  <!-- JAVASCRIPT -->  <script>  
+  
+function checkMedia() {  
+  
+    const input = document.getElementById("mediaUrl");  
+  
+    const message = document.getElementById("message");  
+  
+    const url = input.value.trim();  
+  
+    if (!url) {  
+  
+        message.textContent = "Please enter a media URL.";  
+  
+        return;  
+    }  
+  
+    let parsed;  
+  
+    try {  
+  
+        parsed = new URL(url);  
+  
+        if (  
+            parsed.protocol !== "https:" &&  
+            parsed.protocol !== "http:"  
+        ) {  
+            throw new Error();  
+        }  
+  
+    } catch {  
+  
+        message.textContent = "Please enter a valid URL.";  
+  
+        return;  
+    }  
+  
+    if (  
+        parsed.hostname === "youtube.com" ||  
+        parsed.hostname.endsWith(".youtube.com") ||  
+        parsed.hostname === "youtu.be"  
+    ) {  
+  
+        message.textContent =  
+        "Please use official YouTube download options.";  
+  
+        return;  
+    }  
+  
+    if (!/\.(mp4|webm|mp3|wav|ogg|m4a)$/i.test(parsed.pathname)) {  
+  
+        message.textContent =  
+        "Please enter a direct supported media file URL.";  
+  
+        return;  
+    }  
+  
+    message.replaceChildren();  
+  
+    const link = document.createElement("a");  
+  
+    link.href = parsed.href;  
+    link.target = "_blank";  
+    link.rel = "noopener noreferrer";  
+    link.textContent = "Open Media File";  
+  
+    message.append(  
+        document.createTextNode("Valid media link. "),  
+        link  
+    );  
+  
+}  
+  
+</script>  </body>  
+      </html>  
