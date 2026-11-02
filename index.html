@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="BHZ38xmb6qYGqKbcfcMefxPV7Y7JFCqGml6T1f3zm1M" />
-<title>YOUFAST - Video & Audio Tools</title>
-<meta name="description" content="YOUFAST - Simple online video and audio tools.">
+
+<title>YOUFAST – Free Video & Audio Tools</title>
+
+<meta name="description" content="YOUFAST is a simple video and audio tools website. Preview YouTube videos and explore media tools.">
 
 <style>
 * {
@@ -16,182 +17,129 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #f4f7fc;
+    background: #f3f6fc;
     color: #172554;
 }
 
 header {
-    background: #10234b;
+    background: #071b49;
     color: white;
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
 
 .logo {
-    font-size: 27px;
+    font-size: 32px;
     font-weight: bold;
     letter-spacing: 2px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 12px;
-    font-size: 14px;
+header p {
+    margin-top: 7px;
+    color: #cbd5e1;
 }
 
 .hero {
     text-align: center;
-    padding: 65px 15px;
-    background: linear-gradient(135deg, #10234b, #2563eb);
-    color: white;
+    padding: 45px 15px 30px;
 }
 
 .hero h1 {
-    font-size: 36px;
-    margin-bottom: 15px;
+    font-size: 29px;
+    margin-bottom: 12px;
 }
 
 .hero p {
-    font-size: 16px;
-    line-height: 1.7;
+    color: #64748b;
+    line-height: 1.6;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 700px;
     margin: auto;
-    padding: 25px 15px;
+    padding: 15px;
 }
 
-.section-title {
-    text-align: center;
-    margin-bottom: 22px;
-    font-size: 27px;
-}
-
-.tool-card {
+.search-box {
     background: white;
-    padding: 25px 18px;
-    margin-bottom: 22px;
+    padding: 22px;
     border-radius: 15px;
-    box-shadow: 0 4px 18px #0001;
+    box-shadow: 0 5px 20px #00000012;
 }
 
-.tool-card h2 {
-    margin-bottom: 12px;
-    color: #1d4ed8;
-}
-
-.tool-card p {
-    line-height: 1.6;
+.search-box h2 {
     margin-bottom: 15px;
+    font-size: 21px;
 }
 
-input[type="file"],
-input[type="url"] {
+input {
     width: 100%;
-    padding: 14px;
-    border: 1px solid #ccd5e5;
+    padding: 15px;
+    border: 1px solid #cbd5e1;
     border-radius: 9px;
-    margin: 10px 0 16px;
-    background: white;
     font-size: 15px;
+    outline: none;
 }
 
 button {
-    background: #2563eb;
+    width: 100%;
+    padding: 15px;
+    background: #1746a2;
     color: white;
     border: none;
-    padding: 14px 22px;
     border-radius: 9px;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 13px;
     cursor: pointer;
-    margin: 5px 3px;
 }
 
 button:hover {
-    background: #1d4ed8;
+    background: #0b2d72;
 }
 
-.preview {
-    margin-top: 20px;
-    width: 100%;
+.card {
+    background: white;
+    margin-top: 22px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #00000012;
 }
 
-.preview video,
-.preview audio {
+.card h2 {
+    margin-bottom: 15px;
+}
+
+iframe {
     width: 100%;
-    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
     border-radius: 10px;
 }
 
-.preview video {
-    background: #000;
+.download-info {
+    background: #eaf1ff;
+    padding: 14px;
+    border-radius: 9px;
+    margin-top: 13px;
+    line-height: 1.5;
 }
 
-.message {
-    margin-top: 15px;
-    overflow-wrap: anywhere;
-    line-height: 1.6;
-}
-
-.features {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-}
-
-.feature {
-    background: white;
-    padding: 25px 12px;
-    text-align: center;
-    border-radius: 13px;
-    box-shadow: 0 3px 15px #0001;
-}
-
-.feature h3 {
-    color: #1d4ed8;
-    margin-bottom: 10px;
-}
-
-.about {
-    text-align: center;
-    line-height: 1.8;
-    padding: 35px 15px;
+.hidden {
+    display: none;
 }
 
 footer {
-    background: #10234b;
+    background: #071b49;
     color: white;
     text-align: center;
-    padding: 30px 15px;
-    line-height: 2;
+    padding: 22px;
+    margin-top: 40px;
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-@media(max-width: 480px) {
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .logo {
-        font-size: 22px;
-    }
-
-    nav a {
-        font-size: 12px;
-        margin-left: 6px;
-    }
-
-    .features {
-        grid-template-columns: 1fr 1fr;
-    }
+footer p {
+    color: #cbd5e1;
+    font-size: 13px;
 }
 </style>
 </head>
@@ -200,248 +148,130 @@ footer a {
 
 <header>
     <div class="logo">YOUFAST</div>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#tools">Tools</a>
-        <a href="#about">About</a>
-    </nav>
+    <p>Free Video & Audio Tools</p>
 </header>
 
 <section class="hero">
-    <h1>Your Media, Your Way.</h1>
-
-    <p>
-        Smart Video & Audio Tools
-        <br>
-        Simple, Fast and Mobile Friendly.
-    </p>
+    <h1>Video & Audio in One Place</h1>
+    <p>Paste one YouTube link to preview your video.</p>
 </section>
 
-<main class="container" id="tools">
+<main class="container">
 
-    <h2 class="section-title">🎬 Video Tools</h2>
-
-    <section class="tool-card">
-        <h2>Upload Video</h2>
-
-        <p>Select a video from your mobile or computer.</p>
-
-        <input
-            type="file"
-            id="videoFile"
-            accept="video/*"
-        >
-
-        <div id="videoPreview" class="preview"></div>
-        <div id="videoMessage" class="message"></div>
-    </section>
-
-    <h2 class="section-title">🎵 Audio Tools</h2>
-
-    <section class="tool-card">
-        <h2>Upload Audio</h2>
-
-        <p>Select an audio file from your device.</p>
-
-        <input
-            type="file"
-            id="audioFile"
-            accept="audio/*"
-        >
-
-        <div id="audioPreview" class="preview"></div>
-        <div id="audioMessage" class="message"></div>
-    </section>
-
-    <h2 class="section-title">🔗 Media Link Tools</h2>
-
-    <section class="tool-card">
-        <h2>Open Direct Media Link</h2>
-
-        <p>
-            Enter a direct link to a media file
-            that you own or are authorized to use.
-        </p>
+    <section class="search-box">
+        <h2>Enter YouTube Video Link</h2>
 
         <input
             type="url"
-            id="mediaUrl"
-            placeholder="Paste direct MP4 or MP3 link..."
+            id="youtubeLink"
+            placeholder="Paste YouTube URL here..."
         >
 
-        <button onclick="openMedia()">Preview Media</button>
-
-        <div id="linkPreview" class="preview"></div>
-        <div id="linkMessage" class="message"></div>
+        <button onclick="getVideo()">
+            Get Video
+        </button>
     </section>
 
-    <h2 class="section-title">Our Features</h2>
+    <div id="results" class="hidden">
 
-    <section class="features">
+        <section class="card">
+            <h2>🎬 Video Preview</h2>
 
-        <div class="feature">
-            <h3>🎬 Video</h3>
-            <p>Video file preview.</p>
-        </div>
+            <iframe
+                id="videoPlayer"
+                allowfullscreen
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+            </iframe>
 
-        <div class="feature">
-            <h3>🎵 Audio</h3>
-            <p>Audio file preview.</p>
-        </div>
+            <div class="download-info">
+                Video download will be available for
+                media that is authorized for downloading.
+            </div>
 
-        <div class="feature">
-            <h3>⚡ Simple</h3>
-            <p>Easy to use tools.</p>
-        </div>
+            <button onclick="showNotice()">
+                Download Video
+            </button>
+        </section>
 
-        <div class="feature">
-            <h3>📱 Mobile</h3>
-            <p>Mobile friendly design.</p>
-        </div>
+        <section class="card">
+            <h2>🎵 Audio Preview</h2>
 
-    </section>
+            <div class="download-info">
+                Audio from this YouTube video cannot be
+                extracted here. Use authorized audio sources.
+            </div>
+
+            <button onclick="showNotice()">
+                Download Audio (MP3)
+            </button>
+        </section>
+
+    </div>
 
 </main>
 
-<section class="about" id="about">
-    <h2>About YOUFAST</h2>
-
-    <p>
-        YOUFAST is a simple media tools platform
-        designed to help users preview their
-        authorized video and audio files.
-    </p>
-</section>
-
 <footer>
-    <h2>YOUFAST</h2>
-    <p>Smart Media Tools</p>
-    <p>© 2026 YOUFAST. All Rights Reserved.</p>
+    <div class="logo">YOUFAST</div>
+    <p>Simple • Fast • Useful</p>
+    <p style="margin-top:10px;">
+        © 2026 YOUFAST. All Rights Reserved.
+    </p>
 </footer>
 
 <script>
 
-let videoObjectURL = null;
-let audioObjectURL = null;
+function getVideo() {
 
-function previewFile(inputId, previewId, messageId, type) {
+    let url = document.getElementById("youtubeLink").value.trim();
 
-    const input = document.getElementById(inputId);
-    const preview = document.getElementById(previewId);
-    const message = document.getElementById(messageId);
-
-    input.addEventListener("change", function() {
-
-        preview.replaceChildren();
-        message.textContent = "";
-
-        if (!this.files || !this.files[0]) {
-            return;
-        }
-
-        const file = this.files[0];
-
-        if (!file.type.startsWith(type + "/")) {
-            message.textContent = "Please select a valid " + type + " file.";
-            this.value = "";
-            return;
-        }
-
-        const objectURL = URL.createObjectURL(file);
-
-        if (type === "video") {
-            if (videoObjectURL) URL.revokeObjectURL(videoObjectURL);
-            videoObjectURL = objectURL;
-        } else {
-            if (audioObjectURL) URL.revokeObjectURL(audioObjectURL);
-            audioObjectURL = objectURL;
-        }
-
-        const media = document.createElement(type);
-
-        media.controls = true;
-        media.src = objectURL;
-        media.preload = "metadata";
-
-        if (type === "video") {
-            media.playsInline = true;
-        }
-
-        preview.appendChild(media);
-
-        message.textContent =
-            "File ready: " + file.name +
-            " (" + (file.size / (1024 * 1024)).toFixed(2) + " MB)";
-    });
-}
-
-previewFile("videoFile", "videoPreview", "videoMessage", "video");
-
-previewFile("audioFile", "audioPreview", "audioMessage", "audio");
-
-
-function openMedia() {
-
-    const urlInput = document.getElementById("mediaUrl");
-    const preview = document.getElementById("linkPreview");
-    const message = document.getElementById("linkMessage");
-
-    preview.replaceChildren();
-    message.textContent = "";
-
-    let url;
+    let videoId = "";
 
     try {
-        url = new URL(urlInput.value.trim());
 
-        if (url.protocol !== "https:" && url.protocol !== "http:") {
-            throw new Error();
+        let parsed = new URL(url);
+
+        if (parsed.hostname === "youtu.be") {
+            videoId = parsed.pathname.substring(1);
         }
 
-    } catch {
-        message.textContent = "Please enter a valid HTTP or HTTPS link.";
+        else if (
+            parsed.hostname === "www.youtube.com" ||
+            parsed.hostname === "youtube.com" ||
+            parsed.hostname === "m.youtube.com"
+        ) {
+            videoId = parsed.searchParams.get("v") || "";
+
+            if (parsed.pathname.startsWith("/shorts/")) {
+                videoId = parsed.pathname.split("/")[2];
+            }
+
+            if (parsed.pathname.startsWith("/embed/")) {
+                videoId = parsed.pathname.split("/")[2];
+            }
+        }
+
+    } catch (error) {
+        videoId = "";
+    }
+
+    if (!/^[a-zA-Z0-9_-]{11}$/.test(videoId)) {
+        alert("Please enter a valid YouTube video link.");
         return;
     }
 
-    if (
-        url.hostname === "youtube.com" ||
-        url.hostname.endsWith(".youtube.com") ||
-        url.hostname === "youtu.be"
-    ) {
-        message.textContent =
-            "Please use official platform options for YouTube content.";
-        return;
-    }
+    document.getElementById("videoPlayer").src =
+        "https://www.youtube.com/embed/" + videoId;
 
-    const path = url.pathname.toLowerCase();
+    document.getElementById("results").classList.remove("hidden");
 
-    let type = "";
+    document.getElementById("results").scrollIntoView({
+        behavior: "smooth"
+    });
 
-    if (/\.(mp4|webm|ogg|mov)$/i.test(path)) {
-        type = "video";
-    } else if (/\.(mp3|wav|ogg|m4a|aac|flac)$/i.test(path)) {
-        type = "audio";
-    } else {
-        message.textContent =
-            "Please enter a direct supported media file link.";
-        return;
-    }
+}
 
-    const media = document.createElement(type);
-
-    media.controls = true;
-    media.preload = "metadata";
-    media.src = url.href;
-
-    if (type === "video") {
-        media.playsInline = true;
-    }
-
-    preview.appendChild(media);
-
-    message.textContent =
-        "Media preview added. Playback depends on the link and its server permissions.";
+function showNotice() {
+    alert("Download is available only for authorized media. Download functionality will be added through a compliant service.");
 }
 
 </script>
